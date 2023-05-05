@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto load</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <style>
+    #panorama {
+        width: 600px;
+        height: 400px;
+    }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>張家祖廟</h1>
+            <p>張家祖廟，位在台中西屯的安和公園旁，是市定的三級古蹟，於日治時期明治37年就已經興建，廟前有寬廣的前埕及半月形的水塘，
+                <br>建築格局與中部地區的傳統民居相似，四護龍格局四合院特色格局、柱廊形式三開間的前廳與正廳、紅磚牆跟牆廊有雕刻及彩繪、
+                <br>還有內外護龍的院門屋頂彎曲起翹的燕尾脊，都反映出當年對祖先還有傳統建築美學之觀念，非常值得一觀。
+            </p>
+            <p></p>
+    <div id="panorama"></div>
+        <br>
+        <iframe frameborder="0" src="tour.html" width="600px" height="400px"></iframe>
+    </center>
+    <script>
+    pannellum.viewer('panorama', {
+        "type": "equirectangular",
+        "panorama": "入口.jpg",
+        "autoLoad": true
+    });
+    </script>
+
+</body>
+</html>
